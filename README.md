@@ -13,7 +13,7 @@ docker build . -t portable:latest
 The following command can be used to start portable_env in your $CWD. All file changes will be persistant on your host machine!
 
 ```
-docker run --rm -it -v $(pwd):/host_home portable:latest
+docker run -h "portable" --rm -it -v $(pwd):/cwd portable:latest
 ```
 ## TODO
 - reduce build time...

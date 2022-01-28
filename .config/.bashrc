@@ -9,5 +9,3 @@ alias getip='printf "   Local: "; ifconfig -l | xargs -n1 ipconfig getifaddr; pr
 # Set pbcopy
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
-
-eval "$(starship init bash)"

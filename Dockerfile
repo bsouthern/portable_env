@@ -1,6 +1,6 @@
-FROM rust:latest
+FROM debian:latest
 
-WORKDIR /host_home
+WORKDIR /cwd
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends \
     python3-pip \
@@ -8,10 +8,11 @@ RUN apt-get install -y --no-install-recommends \
     tmux \
     micro \
     xclip \
-    nmap
-
-# Cargo packages
-RUN cargo install bat starship
+    nmap \
+    bat \
+    fish \
+    curl \
+    git 
 
 # Pip packages
 RUN pip install requests
@@ -23,3 +24,4 @@ RUN cp /.config/.tmux.conf ~/.tmux.conf
 
 # Pull config files...
 # Git clone blah....
+CMD ["/usr/bin/fish"]
