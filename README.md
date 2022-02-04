@@ -4,6 +4,12 @@
 
 This is a repository intended to host portable work environment. A Dockerfile is included to allow for running this environment as a container.
 
+## Local Installation
+
+```
+bash .config/install.sh
+```
+
 ## Docker Installation and Usage
 
 ```
@@ -17,5 +23,8 @@ docker run -h "portable" --rm -it -v $(pwd):/cwd portable:latest
 ```
 ## TODO
 - reduce build time...
-- remove/fix emojis in starship
 - tmux path seems different than system path...
+- **Aliases**
+    - Add help alias to print all commands
+- Maybe just have install script to append source $whatever into .zshrc, .bashrc, whatever
+- Backup uBlock Origin config.
