@@ -5,7 +5,8 @@ mkdir -p ~/.config/fish
 cp .config/config.fish ~/.config/fish/
 
 # NVIM
-cp -R .config/nvim/ ~/.config/
+mkdir -p ~/.config/nvim
+cp -R .config/nvim/ ~/.config/nvim
 
 # Aliases
 cp .aliases ~/
