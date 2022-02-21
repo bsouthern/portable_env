@@ -22,9 +22,11 @@ The following command can be used to start portable_env in your $CWD. All file c
 docker run -h "portable" --rm -it -v $(pwd):/cwd portable:latest
 ```
 ## TODO
-- reduce build time...
-- tmux path seems different than system path...
 - **Aliases**
     - Add help alias to print all commands
-- Maybe just have install script to append source $whatever into .zshrc, .bashrc, whatever
 - Backup uBlock Origin config.
+- This could include a slicker install process and build userspace binaries from source that dont need root permissions.
+- This could include a script to automate installation of the bare essential tools like nvim, tmux, fish, curl, webserver
+- Add FZF or some automation that automatically cats the README if present.
+ - Need a way to collapse things in nvim
+ - install.sh is potentially killing the users path
