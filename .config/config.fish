@@ -28,3 +28,4 @@ if status is-interactive
         set_color normal
     end
 end
+source ~/.aliases

@@ -8,5 +8,9 @@ cp .config/config.fish ~/.config/fish/
 mkdir -p ~/.config/nvim
 cp -R .config/nvim/ ~/.config/nvim
 
-# Aliases
+# Aliases. This needs to actually get sourced somewhere...
 cp .aliases ~/
+
+# Alacritty
+mkdir -p ~/.config/alacritty 
+ln -si ./.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml 

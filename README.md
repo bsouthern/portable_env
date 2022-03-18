@@ -29,4 +29,9 @@ docker run -h "portable" --rm -it -v $(pwd):/cwd portable:latest
 - This could include a script to automate installation of the bare essential tools like nvim, tmux, fish, curl, webserver
 - Add FZF or some automation that automatically cats the README if present.
  - Need a way to collapse things in nvim
- - install.sh is potentially killing the users path
+ - switch install.sh to use soft links
+
+## IDEAS
+ - Wouldn't it be nice to have some sort of TUI file manager/navigator? It could maybe
+even only be displayed under some situations...
+ - A nice initial prompt would be dope!
