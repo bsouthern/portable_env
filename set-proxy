@@ -1,0 +1,10 @@
+#! /bin/bash
+set-proxy() {
+    if [ $# -lt 1 ]; then
+        echo "Missing argument";
+        return 1;
+    fi
+    export http_proxy=http://$1/;
+    export https_proxy=https://$1/;
+}
+
