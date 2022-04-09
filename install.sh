@@ -1,10 +1,10 @@
 #!/bin/bash
 # TODO: Add bash script argument checks/prompts
 
-#Set $PENV to cwd and ensure proper directory structure
+# Set $PENV to cwd and ensure proper directory structure
 PENV=`pwd`
 mkdir -p ~/.config/fish
-mkdir -p ~/.config/nvim
+# mkdir -p ~/.config/nvim
 mkdir -p ~/.config/alacritty 
 
 # cd to $HOME and soft link everything
