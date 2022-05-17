@@ -7,4 +7,3 @@ set-proxy() {
     export http_proxy=http://$1/;
     export https_proxy=https://$1/;
 }
-

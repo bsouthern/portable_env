@@ -1,9 +1,16 @@
+kitty
+fish
+nvim
 htop
 bat
 nmap
-fish
-ddgr
-dasel
+docker
+podman
+
+# Optional
 tmux
-nvim
-docker/podman
+
+# Linux Desktop
+sway
+waybar
+bemenu

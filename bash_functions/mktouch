@@ -1,4 +1,5 @@
 #! /bin/bash
+# TODO: This shit doesn't even work
 # Create a file from a path and create directories as needed.
 mktouch() {
     if [ $# -lt 1 ]; then
@@ -11,4 +12,3 @@ mktouch() {
         touch -- "$f"
     done
 }
-

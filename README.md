@@ -37,9 +37,15 @@ docker run -h "portable" --rm -it -v $(pwd):/cwd portable:latest
 - add help alias to print all commands
 - Backup uBlock Origin config.
 - This could include a slicker install process and build userspace binaries from source that dont need root permissions.
-- This could include a script to automate installation of the bare essential tools like nvim, tmux, fish, curl, webserver
+- This could include a script to automate binary installation like nvim, kitty, bat...
 - Add FZF or some automation that automatically cats the README if present.
- - Need a way to collapse things in nvim
+- Add kitty config
+
+### NVIM
+- Need a way to collapse things in nvim
+- comment
+- smoother terminal
+- shortcuts for tabs/windows
 
 ## IDEAS
  - Wouldn't it be nice to have some sort of TUI file manager/navigator? It could maybe
