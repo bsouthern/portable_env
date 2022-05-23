@@ -75,4 +75,4 @@ map <Leader>tk <C-w>t<C-w>K
 " Removes pipes | that act as seperators on splits
 set fillchars+=vert:\ 
 
-
+" :split | terminal
