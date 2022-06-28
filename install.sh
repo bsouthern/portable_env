@@ -8,7 +8,7 @@
 # Set $PENV to cwd and ensure proper directory structure
 PENV=`pwd`
 mkdir -p ~/.config/fish
-mkdir -p ~/.config/nvim
+#mkdir -p ~/.config/nvim
 #mkdir -p ~/.config/alacritty 
 #mkdir -p ~/.config/kitty
 #mkdir -p ~/.config/sway

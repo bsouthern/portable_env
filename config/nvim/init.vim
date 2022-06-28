@@ -17,6 +17,8 @@ syntax enable
 let g:rehash256 = 1
 set title
 set linebreak
+set cursorline
+set termguicolors
 let g:markdown_fenced_languages = ['bash=sh', 'javascript', 'js=javascript', 'json=javascript', 'typescript', 'ts=typescript', 'php', 'html', 'css']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -24,6 +26,8 @@ let g:markdown_fenced_languages = ['bash=sh', 'javascript', 'js=javascript', 'js
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap jk <Esc>
 tnoremap jk <C-\><C-n>
+nnoremap H  :tabprevious<CR>
+nnoremap L  :tabnext<CR>
 
 " Always show statusline
 set laststatus=2
@@ -76,3 +80,10 @@ map <Leader>tk <C-w>t<C-w>K
 set fillchars+=vert:\ 
 
 " :split | terminal
+"
+
+" Plugins
+call plug#begin()
+Plug 'alaviss/nim.nvim'
+
+call plug#end()
