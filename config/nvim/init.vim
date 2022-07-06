@@ -84,6 +84,9 @@ set fillchars+=vert:\
 
 " Plugins
 call plug#begin()
+
 Plug 'alaviss/nim.nvim'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
