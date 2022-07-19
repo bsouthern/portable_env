@@ -29,7 +29,24 @@ return require( "packer" ).startup( function( use )
   use "kwsp/halcyon-neovim"
   use "lucastrvsn/kikwis"
   use "Shatur/neovim-ayu"
-
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  -- use "MunifTanjim/nui.nvim"
+  -- use {
+  -- "nvim-neo-tree/neo-tree.nvim",
+  --   branch = "v2.*",
+  --   requires = {
+  --     "nvim-lua/plenary.nvim",
+  --     "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+  --     "MunifTanjim/nui.nvim",
+  --   }
+  -- }
+  use {
+  'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 
   -- Tools -----------------------------------------------------------
   use "nvim-telescope/telescope.nvim" -- | Fuzzy finder

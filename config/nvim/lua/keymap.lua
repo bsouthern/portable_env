@@ -18,6 +18,9 @@ map("n", "\\m",      "<cmd>Telescope marks<CR>",      opt)
 map("n", "\\b",      "<cmd>Telescope buffers<CR>",    opt)
 map("n", "\\<Space>","<cmd>Telescope buffers<CR>",    opt)
 
+-- Explorer
+map("n", "\\e", "<cmd>:NvimTreeToggle<CR>", opt)
+
 -- Manage tabs
 map("n", "tn",       "<cmd>tabnew<CR>",   opt)
 map("n", "tq",       "<cmd>tabclose<CR>", opt)

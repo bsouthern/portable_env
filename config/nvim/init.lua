@@ -58,6 +58,16 @@ vim.api.nvim_set_var("gruvbox_contrast_dark","hard") -- "medium", "soft"
 -- Load colorscheme with fail safe ones
 -- and tweak to beter user interface experience
 require("colors").use("wal","dracula","gruvbox","desert")
+require("bufferline").setup {
+  options = {
+    mode = "tabs",
+    enfore_regular_tabs = true,
+    -- sort_by = "insert_after_current",
+    -- persist_buffer_sort = true,
+  }
+}
+-- vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+require("nvim-tree").setup()
 
 vim.cmd('source $HOME/.config/nvim/term.vim')
 

@@ -8,8 +8,8 @@ autocmd BufWinEnter,WinEnter term://* startinsert
 " Suckless ToggleTerm
 noremap <silent> <C-\> :vsplit \| terminal fish<CR>
 noremap <silent> <C--> :split \| terminal fish<CR>
-tnoremap <C-\> <C-\><C-N>:close<CR>
-tnoremap <C--> <C-\><C-N>:close<CR>
+tnoremap <C-\> <C-\><C-N>:bw!<CR>
+tnoremap <C--> <C-\><C-N>:bw!<CR>
 
 " Splits Nagivation
 tnoremap <C-h> <C-\><C-N><C-w>h

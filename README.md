@@ -47,6 +47,10 @@ docker run -h "portable" --rm -it -v $(pwd):/cwd portable:latest
 - smoother terminal
 - shortcuts for tabs/windows
 
+### Kitty
+- ssh with kitty:
+> kitty +kitten ssh some-hostname-to-connect-to
+
 ## IDEAS
  - Wouldn't it be nice to have some sort of TUI file manager/navigator? It could maybe
 even only be displayed under some situations...
