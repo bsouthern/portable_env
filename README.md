@@ -34,6 +34,7 @@ docker run -h "portable" --rm -it -v $(pwd):/cwd portable:latest
 ```
 
 ## TODO
+- Add script to :checkhealth
 - add help alias to print all commands
 - Backup uBlock Origin config.
 - This could include a slicker install process and build userspace binaries from source that dont need root permissions.
