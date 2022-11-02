@@ -34,4 +34,4 @@ alias set_proxy='function _() { export http_proxy=http://$1/;export https_proxy=
 #alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Default to fish without changing login shell
-exec fish
+# exec fish
