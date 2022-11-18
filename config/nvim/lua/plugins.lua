@@ -1,3 +1,24 @@
+-- Plugins
+-- Configure plugins, plugin specific functions and autocommands are to be
+-- written in the corresponding files (makes debuging and trying out plugins easier)
+
+local fn = vim.fn
+local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
+local run_sync = false
+
+-- Install packer for package management, if missing
+if (fn.empty(fn.glob(install_path)) > 0) then
+  run_sync = fn.system({
+    'git',
+    'clone',
+    '--depth',
+    '1',
+    'https://github.com/wbthomason/packer.nvim',
+    install_path
+  })
+  vim.cmd('packadd packer.nvim')
+end
+
 return require( "packer" ).startup( function( use )
   use "wbthomason/packer.nvim"        -- | Plugin Manager
 
@@ -13,9 +34,8 @@ return require( "packer" ).startup( function( use )
   use "L3MON4D3/LuaSnip"              -- | Snippets plugin
   use "saadparwaiz1/cmp_luasnip"      -- | Snippets source for nvim-cmp
 
-  use "arkt8/nim.vim"                 -- | Syntax highlight for Nim
+--  use "arkt8/nim.vim"                 -- | Syntax highlight for Nim
   use "jakwings/vim-terra"            -- | Support for terralang
---  use "lspconfig".gopls.setup{}
 
   -- Interface & Colorschemes ----------------------------------------
   use "nvim-lualine/lualine.nvim"     -- | Status line

@@ -1,5 +1,5 @@
 source ~/.aliases
-eval "$(/Users/k30505/homebrew/bin/brew shellenv)"
+# eval "$(/Users/k30505/homebrew/bin/brew shellenv)"
 # set TERM xterm-kitty
 
 # Kitty Shell Integration
@@ -35,8 +35,4 @@ if [ "$fish_key_bindings" = "fish_vi_key_bindings" ];
 else
   bind ! __history_previous_command
   bind '$' __history_previous_command_arguments
-end
-
-if test -e '/Users/k30505/.nix-profile/etc/profile.d/nix.sh'
-  fenv source '/Users/k30505/.nix-profile/etc/profile.d/nix.sh'
 end

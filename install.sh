@@ -7,7 +7,7 @@
 
 # Set $PENV to cwd and ensure proper directory structure
 PENV=`pwd`
-mkdir -p ~/.config/fish
+#mkdir -p ~/.config/fish
 #mkdir -p ~/.config/nvim
 #mkdir -p ~/.config/alacritty 
 #mkdir -p ~/.config/kitty
@@ -18,13 +18,13 @@ mkdir -p ~/.config/fish
 cd ~
 #ln -si $PENV/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml 
 #ln -se $PENV/config/kitty ~/.config/kitty
-ln -si $PENV/config/config.fish ~/.config/fish
+#ln -si $PENV/config/config.fish ~/.config/fish
 ln -si $PENV/config/nvim ~/.config/nvim
 #ln -si $PENV/config/.zshrc
-ln -si $PENV/.aliases ~/.aliases
+#ln -si $PENV/.aliases ~/.aliases
 #ln -si $PENV/.tmux.conf ~/.tmux.conf
 #ln -si $PENV/config/sway ~/.config/sway
 #ln -si $PENV/config/waybar ~/.config/waybar
 
 # bash_functions
-ln -si $PENV/bash_functions/* ~/bin/
+#ln -si $PENV/bash_functions/* ~/bin/
