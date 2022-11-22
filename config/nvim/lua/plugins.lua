@@ -35,6 +35,7 @@ return require( "packer" ).startup( function( use )
   use "saadparwaiz1/cmp_luasnip"      -- | Snippets source for nvim-cmp
 
 --  use "arkt8/nim.vim"                 -- | Syntax highlight for Nim
+  use "alaviss/nim.nvim"
   use "jakwings/vim-terra"            -- | Support for terralang
 
   -- Interface & Colorschemes ----------------------------------------
