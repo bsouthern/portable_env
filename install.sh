@@ -17,7 +17,7 @@ PENV=`pwd`
 # cd to $HOME and soft link everything
 cd ~
 #ln -si $PENV/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml 
-#ln -se $PENV/config/kitty ~/.config/kitty
+ln -si $PENV/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 #ln -si $PENV/config/config.fish ~/.config/fish
 ln -si $PENV/config/nvim ~/.config/nvim
 #ln -si $PENV/config/.zshrc
