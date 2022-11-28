@@ -49,7 +49,7 @@ O.wrap           = false
 O.clipboard      = "unnamed"
 O.termguicolors  = true
 
-O.background     = "dark"
+-- O.background     = "dark"
 
 end
 
@@ -58,10 +58,12 @@ vim.api.nvim_set_var("gruvbox_contrast_dark","hard") -- "medium", "soft"
 -- Load colorscheme with fail safe ones
 -- and tweak to beter user interface experience
 require("colors").use("wal","dracula","gruvbox","desert")
+
+-- Tab bar stuff
 require("bufferline").setup {
   options = {
     mode = "tabs",
-    enfore_regular_tabs = true,
+    enforce_regular_tabs = true,
     -- sort_by = "insert_after_current",
     -- persist_buffer_sort = true,
   }
