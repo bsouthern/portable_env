@@ -7,21 +7,32 @@
 
 # Set $PENV to cwd and ensure proper directory structure
 PENV=`pwd`
-#mkdir -p ~/.config/fish
-#mkdir -p ~/.config/nvim
 #mkdir -p ~/.config/alacritty 
 #mkdir -p ~/.config/kitty
+#mkdir -p ~/.config/nvim
+#mkdir -p ~/.config/helix
+#mkdir -p ~/.config/fish
 #mkdir -p ~/.config/sway
 #mkdir -p ~/.config waybar
 
 # cd to $HOME and soft link everything
 cd ~
+
+# Terminals
 #ln -si $PENV/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml 
 ln -si $PENV/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-#ln -si $PENV/config/config.fish ~/.config/fish
+
+# Editors
 ln -si $PENV/config/nvim ~/.config/nvim
+ln -si $PENV/config/helix ~/.config/helix
+
+# Shells
+#ln -si $PENV/config/config.fish ~/.config/fish
 #ln -si $PENV/config/.zshrc
 #ln -si $PENV/.aliases ~/.aliases
+
+# Misc.
+ln -si $PENV/config/.amethyst.yml ~/.amethyst.yml
 #ln -si $PENV/.tmux.conf ~/.tmux.conf
 #ln -si $PENV/config/sway ~/.config/sway
 #ln -si $PENV/config/waybar ~/.config/waybar
