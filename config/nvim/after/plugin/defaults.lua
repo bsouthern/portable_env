@@ -38,10 +38,10 @@ map("n", "\\h",       "<cmd>:sp<CR>", opt)
 -- Smart manual identation
 map("v", ">",       ">gv", opt)
 map("v", "<lt>",    "<gv", opt)
-map("v", "<Tab>",   ">gv", opt)
-map("v", "<S-Tab>", "<gv", opt)
-map("n", "<Tab>",   ">>",  opt)
-map("n", "<S-Tab>", "<<",  opt)
+-- map("v", "<Tab>",   ">gv", opt)
+-- map("v", "<S-Tab>", "<gv", opt)
+-- map("n", "<Tab>",   ">>",  opt)
+-- map("n", "<S-Tab>", "<<",  opt)
 
 -- The system clipboard
 map("v", "<C-y>",   '"+yy', opt)
