@@ -23,8 +23,9 @@ cd ~
 ln -si $PENV/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 # Editors
-ln -si $PENV/config/nvim ~/.config/nvim
-ln -si $PENV/config/helix ~/.config/helix
+#ln -si $PENV/config/nvim ~/.config/nvim
+#ln -si $PENV/config/helix ~/.config/helix
+ln -si $PENV/config/kak ~/.config/kak
 
 # Shells
 #ln -si $PENV/config/config.fish ~/.config/fish
@@ -32,7 +33,7 @@ ln -si $PENV/config/helix ~/.config/helix
 #ln -si $PENV/.aliases ~/.aliases
 
 # Misc.
-ln -si $PENV/config/.amethyst.yml ~/.amethyst.yml
+# ln -si $PENV/config/.amethyst.yml ~/.amethyst.yml
 #ln -si $PENV/.tmux.conf ~/.tmux.conf
 #ln -si $PENV/config/sway ~/.config/sway
 #ln -si $PENV/config/waybar ~/.config/waybar

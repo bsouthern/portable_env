@@ -1,15 +1,34 @@
-#! /usr/bin/fish
-# Link executable to path
-set -gx dst $HOME/bin
-set -gx src $argv[1]
+#! /bin/bash
+
+# Link executable from $argv[1] to $HOME/bin
+dst=$HOME/bin
+src=$1
+
 echo      link source: $PWD/$src
 echo link destination: $dst/$src
 
 # Validate $1
-if test -f $src
-    #TODO: ckexec()
+if [ -f $src ]; then
+    # TODO: ckexec()
     ln -si $PWD/$src $dst/$src
+    echo "binary location: $(which $src)"
 else
     echo "$src not found in $PWD"
-end
-echo "binary location: $(which $src)"
+fi
+
+##### OLD FISH SCRIPT #####
+###! /usr/bin/fish
+### Link executable to path
+##set -gx dst $HOME/bin
+##set -gx src $argv[1]
+##echo      link source: $PWD/$src
+##echo link destination: $dst/$src
+##
+### Validate $1
+##if test -f $src
+##    #TODO: ckexec()
+##    ln -si $PWD/$src $dst/$src
+##else
+##    echo "$src not found in $PWD"
+##end
+##echo "binary location: $(which $src)"
