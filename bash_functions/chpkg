@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Check if apt is installed
+if command -v apt > /dev/null 2>&1; then
+    echo "apt is available"
+fi
+
+# Check if yum is installed
+if command -v yum > /dev/null 2>&1; then
+    echo "yum is available"
+fi
+
+# Check if dnf is installed
+if command -v dnf > /dev/null 2>&1; then
+    echo "dnf is available"
+fi
+
+# Check if zypper is installed
+if command -v zypper > /dev/null 2>&1; then
+    echo "zypper is available"
+fi
+
+# Check if pacman is installed
+if command -v pacman > /dev/null 2>&1; then
+    echo "pacman is available"
+fi
+
+# Check if apk is installed
+if command -v apk > /dev/null 2>&1; then
+    echo "apk is available"
+fi
+
+# Check if brew is installed (macOS only)
+if command -v brew > /dev/null 2>&1; then
+    echo "brew is available"
+fi
+

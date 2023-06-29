@@ -20,12 +20,12 @@ cd ~
 
 # Terminals
 #ln -si $PENV/config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml 
-ln -si $PENV/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
+# ln -si $PENV/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 # Editors
 #ln -si $PENV/config/nvim ~/.config/nvim
-#ln -si $PENV/config/helix ~/.config/helix
-ln -si $PENV/config/kak ~/.config/kak
+ln -si $PENV/config/helix ~/.config/helix
+# ln -si $PENV/config/kak ~/.config/kak
 
 # Shells
 #ln -si $PENV/config/config.fish ~/.config/fish

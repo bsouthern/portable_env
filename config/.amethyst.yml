@@ -1,8 +1,7 @@
-# Use tall and fullscreen layouts
 layouts:
     - tall
-    #- fullscreen
-    #- tall-right
+    - fullscreen
+    # - tall-right
     #- wide
     - two-pane
     #- 3column-left
@@ -10,7 +9,7 @@ layouts:
     #- 3column-right
     #- 4column-left
     #- 4column-right
-    - column
+    #- column
     #- row
     - floating
     #- widescreen-tall
