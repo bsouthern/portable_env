@@ -1,0 +1,42 @@
+#!/bin/bash
+
+convert_url() {
+    local result
+    result=$(echo "$1" | sed -n 's|https://code\.amazon\.com/packages/\([a-zA-Z0-9]\{1,64\}\)/trees/mainline|ssh://git.amazon.com/pkg/\1|p')
+
+    # Check if result is empty, indicating the input didn't match the pattern
+    if [ -z "$result" ]; then
+        usage
+        exit 1
+    else
+        echo "$result"
+    fi
+}
+
+usage() {
+    echo "Usage: $0 [URL]"
+    echo "Converts a given URL from the format:"
+    echo "  https://code.amazon.com/packages/Service/trees/mainline"
+    echo "to:"
+    echo "  ssh://git.amazon.com/pkg/Service"
+    echo ""
+    echo "If no URL is provided, the script will read from stdin."
+}
+
+# Check for the help flag in all of argv
+for arg in "$@"; do
+    if [ "$arg" == "-h" ]; then
+        usage
+        exit 0
+    fi
+done
+
+# Check if input is provided as an argument
+if [ "$#" -eq 1 ]; then
+    convert_url "$1"
+else
+    while IFS= read -r line; do
+        convert_url "$line"
+    done
+fi
+

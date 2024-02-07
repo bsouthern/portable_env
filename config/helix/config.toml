@@ -1,19 +1,28 @@
-theme = "base16_default"
+theme        = "base16_default"
 
 [editor]
-# line-number = "relative"
-cursorline = true
+line-number = "relative"
+cursorline  = true
+bufferline  = "multiple"
+auto-save   = true
+color-modes = true
+# rulers = [100]
+true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "block"
 
+[editor.gutters]
+# layout = ["diagnostics", "line-numbers", "spacer", "diff"]
+line-numbers.min-width = 2
+
 [editor.statusline]
 #left = ["mode", "spinner"]
 #center = ["file-name"]
 #right = ["diagnostics", "position", "file-encoding", "file-type"]
-#separator = "│"
+separator = "│"
 #mode.normal = "NORMAL"
 #mode.insert = "INSERT"
 #mode.select = "SELECT"
@@ -24,6 +33,7 @@ hidden = false
 
 [editor.soft-wrap]
 enable = true
+wrap-at-text-width = true
 
 [editor.whitespace.render]
 tab = "all"
@@ -44,9 +54,14 @@ display-messages = true
 
 [keys.normal]
 g = { a = "code_action" } # Maps `ga` to show possible code actions
-"ret" = ["move_line_down", "goto_first_nonwhitespace"] # Maps the enter key to move to start of next line
+"ret" = ["move_line_down", "goto_first_nonwhitespace"] # move to start of next line
+"S-ret" = ["move_line_up", "goto_first_nonwhitespace"] # Go up instead...
 X = "extend_line_above"
 D = "delete_char_backward"
 
 [keys.insert]
 j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+C-e = ["goto_line_end", "move_char_right"]
+C-a = "goto_line_start"
+C-f = "move_char_right"
+C-b = "move_char_left"

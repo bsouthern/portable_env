@@ -6,3 +6,4 @@ alias clear-proxy='export http_proxy="" && export https_proxy=""'
 alias getip='printf "   Local: "; ifconfig -l | xargs -n1 ipconfig getifaddr; printf "External: "; curl whatismyip.akamai.com'
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
+export OPENAI_API_KEY=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

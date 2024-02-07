@@ -2,6 +2,8 @@
 # TODO: This shit doesn't even work
 # Create a file from a path and create directories as needed.
 mktouch() {
+    echo "WARNING: THIS SHIT DOESNT EVEN WORK";
+    exit 1
     if [ $# -lt 1 ]; then
         echo "Missing argument";
         return 1;
@@ -12,3 +14,5 @@ mktouch() {
         touch -- "$f"
     done
 }
+
+mktouch

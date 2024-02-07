@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <file_with_repo_urls>"
+    exit 1
+fi
+
+file="$1"
+num_procs=10  # for example, to run 10 clones in parallel
+
+cat "$file" | xargs -I {} -P "$num_procs" git clone {}
