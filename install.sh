@@ -24,7 +24,7 @@ cd ~
 
 # Editors
 #ln -si $PENV/config/nvim ~/.config/nvim
-ln -si $PENV/config/helix ~/.config/helix
+ln -si $PENV/config/helix ~/.config/
 # ln -si $PENV/config/kak ~/.config/kak
 
 # Shells
