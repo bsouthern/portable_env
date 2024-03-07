@@ -1,13 +1,14 @@
 theme        = "base16_default"
 
 [editor]
-line-number = "relative"
+line-number = "absolute"
 cursorline  = true
 bufferline  = "multiple"
 auto-save   = true
 color-modes = true
 # rulers = [100]
-true-color = true
+true-color  = true
+text-width  = 100
 
 [editor.cursor-shape]
 insert = "bar"
@@ -15,21 +16,10 @@ normal = "block"
 select = "block"
 
 [editor.gutters]
-# layout = ["diagnostics", "line-numbers", "spacer", "diff"]
 line-numbers.min-width = 2
 
 [editor.statusline]
-#left = ["mode", "spinner"]
-#center = ["file-name"]
-#right = ["diagnostics", "position", "file-encoding", "file-type"]
 separator = "│"
-#mode.normal = "NORMAL"
-#mode.insert = "INSERT"
-#mode.select = "SELECT"
-
-[editor.file-picker]
-# file picker is handy
-hidden = false
 
 [editor.soft-wrap]
 enable = true
@@ -45,8 +35,8 @@ tab = "→"
 tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 
 [editor.indent-guides]
-render = false
-character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
 
 [editor.lsp]
